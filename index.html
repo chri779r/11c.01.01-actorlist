@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_01_01 Actor List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Actors from movies</h1>
+        <h2>Such as</h2>
+        <nav id="filter_buttons">
+            <button class="filter clicked" data-movie="all">Every actor</div></button>
+            <button class="filter" data-movie="Fight Club">Fight Club</div></button>
+            <button class="filter" data-movie="Goodfellas">Goodfellas</div></button>
+            <button class="filter" data-movie="Inception">Inception</div></button>
+            <button class="filter" data-movie="Pulp Fiction">Pulp Fiction</div></button>
+        </nav>
+    </header>
+
+    <main>
+        <h3 class="section_header">All actors</h3>
+        <section id="popup">
+            <article class="popup_content">
+                <div class="close">X</div>
+                <div class="popup_column">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="popup_column"></div>
+            </article>
+        </section>
+        <section id="actors"></section>
+    </main>
+
+    <template id="actor_template">
+        <article class="actor">
+            <h3></h3>
+            <p></p>
+        </article>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
